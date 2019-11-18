@@ -1,0 +1,118 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	background-color: #EFEFF4;
+	font-family: '微软雅黑';
+}
+
+html,
+body,
+img,
+view,
+text {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.bgcf {
+	background: #fff;
+}
+
+.border-Bottom {
+	border-bottom: 1px solid #F0E7E6;
+}
+
+.flex {
+	display: flex;
+}
+
+	/* 整个小标题 */
+	.header_save {
+		width: 100%;
+		height: 44px;
+		flex-direction: column;
+		// box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.12);
+		position: relative;
+		z-index: 999;
+	}
+
+	
+	.header_title_white_save_fff {
+		width: 100%;
+		height: 44px;
+		padding: 7px 3px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #EBEBEB;
+		position: fixed;
+		align-content: center;
+		align-items: center;
+		align-self: center;
+		background-color: #FFFFFF;
+		justify-content: center;
+		color: #212832;
+		font-size: 0.85rem;
+		font-weight: 550;
+	}
+	.header_title_white_save_f7 {
+		width: 100%;
+		height: 44px;
+		padding: 7px 3px;
+		box-sizing: border-box;
+		/* background-color: black; */
+		border-bottom: 1px solid #EBEBEB;
+		position: fixed;
+		align-content: center;
+		align-items: center;
+		align-self: center;
+		background-color: #f7f7f7;
+		justify-content: center;
+		color: #212832;
+		font-size: 0.85rem;
+		font-weight: 550;
+	}
+	
+
+	/* 左边返回图标 */
+	.left_save {
+		width: 25px;
+		height: 25px;
+		margin-left: 5px;
+		position: absolute;
+		left: 6px;
+		top: 20%;
+		color: #fff;
+	}
+
+	.right_savebtn{
+		width: 30px;
+		height: 30px;
+		margin-left: 5px;
+		position: absolute;
+		right: 6px;
+		color: #3C84EF;
+		font-size: 0.7rem;
+		font-weight: normal;
+		align-content: center;
+		align-items: center;
+	}
+	.right_save_collection{
+		width: 45px;
+		height: 30px;
+		margin-left: 5px;
+		position: absolute;
+		right: 6px;
+		color: #555555;
+		font-size: 0.75rem;
+		font-weight: 550;
+		align-content: center;
+		align-items: center;
+	}
+	.right_save_collection image{
+		width: 11px;
+		height: 10px;
+		margin-right: 5px;
+	}
+
