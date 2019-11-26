@@ -103,7 +103,54 @@
 		<view class="personal_info">
 			<view class="personal">
 				<!-- <personal></personal> -->
-				<button type="primary" @tap="comment">发表专属评论</button>
+				<button type="primary" @tap="comment" v-show="comments">发表专属评论</button>
+				<view class="personal_content" v-show="!comments">
+					<view class="personal_logo flex">
+						<view class="personal_left flex">
+							<view class="personal_user">
+								<image src="../../../../static/img/user.jpeg" mode="aspectFit"></image>
+							</view>
+							<view class="personal_name flex">
+								<view class="user_view flex">
+									<text>王小达</text>发表了看法
+								</view>
+								<view class="user_date">
+									2019.07.12 12：23
+								</view>
+							</view>
+						</view>
+						<view class="personal_right flex">
+							<view class="good">
+								<image src="../../../../static/img/good.png" mode="aspectFit"></image>
+								{{good}}
+							</view>
+							<view class="msg">
+								<image src="../../../../static/img/message.png" mode="aspectFit"></image>
+								{{msg}}
+							</view>
+						</view>
+					</view>
+
+					<view class="personal_text">
+						<text>房地产融资环境发生较大变化，正如本文所谈到，首先是监管部门约谈了近期房地产信托业务增速过快、增量过大的信托公司，要求严控地产信托规模；其次，发改委针对房地产企业发行外债。</text>
+					</view>
+
+					<view class="personal_other_content">
+						<view>
+							<view>张三：</view>
+							<text>说的对</text>
+						</view>
+						<view>
+							<view>王国单单：</view>
+							<text>非常同意这个说法，但是具体怎么操作常同意这个说法，但是具体怎么操作</text>
+						</view>
+						<view>
+							<view>王国单：</view>
+							<text>非常同意这个说法，但是具体怎么操作</text>
+						</view>
+					</view>
+				</view>
+
 			</view>
 			<view class="product">
 				<product></product>
@@ -116,7 +163,8 @@
 		</view>
 		<view class="add_btn flex">
 			<text class="flex look">
-				<image src="../../../../static/img/preview.png" mode="aspectFit"></image>预览</text>
+				<image src="../../../../static/img/preview.png" mode="aspectFit"></image>预览
+			</text>
 			<text class="flex save">保存并转发</text>
 		</view>
 		<!-- 悬浮 -->
@@ -163,6 +211,9 @@
 				sets:'set',
 				showNotes:false,//显示注释内容
 				Xclose:true,
+				good:3,//点赞数
+				msg:3,//评论数
+				comments:false
 			};
 		},
 		methods: {
@@ -432,6 +483,89 @@
 					font-size: $size14;
 					background-color: #3C84EF;
 					padding: 4px 0 3px;
+				}
+				.personal_content{
+					.personal_logo{
+						justify-content: space-between;
+						align-content: center;
+						align-items: center;
+						margin-bottom: 18px;
+						.personal_left{
+							justify-content: space-between;
+							.personal_user{
+								image{
+									width: 40px;
+									height: 40px;
+									border-radius: 50%;
+								}
+							}
+							.personal_name{
+								flex-direction: column;
+								.user_view{
+									margin-left: 10px;
+									font-size: $size14;
+									color: $color55;
+									font-weight: 550;
+									text{
+										margin-right: 5px;
+									}
+								}
+								.user_date{
+									color: $color88;
+									transform: scale(0.8);
+								}
+							}
+						}
+						.personal_right{
+					
+						color: $color88;
+						align-content: flex-start;
+						align-items: flex-start;
+							.good{
+								margin-right: 5px;
+								image{
+									width: 12px;
+									height: 15px;
+									margin-right: 5px;
+								}
+							}
+							.msg{
+								image{
+									width: 14px;
+									height: 12px;
+									margin-right: 5px;
+								}
+							}
+						}
+					}
+					.personal_text{
+						margin-bottom: 11px;
+						text{
+							font-size: $size14;
+							color: $color55;
+							line-height: 20px;
+						}
+					}
+					.personal_other_content{
+						background: #f0f0f0;
+						border-radius: 4px;
+						
+						padding: 11px 16px 13px;
+						view{
+							view{
+								display: inline-block;
+								margin-right: 8px;
+								color:#2e7ff1;
+								font-size:$size14;
+								
+							}
+							text{
+								font-size: $size14;
+								color:#3a3a3a;
+								font-weight: 200;
+							}
+						}
+					}
 				}
 			}
 		}
