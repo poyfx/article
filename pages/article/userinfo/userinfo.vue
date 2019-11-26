@@ -18,9 +18,12 @@
 			<view class="info_photo flex ">
 				<text>推荐语</text>
 				<view class="flex" @click="openPopup">
-					<view>推荐阅读</view>
-					<image class="read" src="../../../../static/img/select.png" mode="aspectFit"></image>
+					<picker @change="bindPickerChange" :value="index" :range="items">
+						<view class="uni-input">{{items[index]}}</view>
+					</picker>
+					<image class="read" src="../../../static/img/select.png" mode="aspectFit"></image>
 				</view>
+
 			</view>
 		</view>
 
@@ -63,13 +66,8 @@
 			<button class="start">启动该模块</button>
 			<button class="delete">删除该模块</button>
 		</view>
-		<uni-popup ref="popup" type="bottom">
-			<scroll-view scroll-y="true" style="height: 40px">
-				<view  v-for="(item,index) in items" :key="index" >
-					<text>{{item.value}}</text>
-				</view>
-			</scroll-view>
-		</uni-popup>
+		
+		
 	</view>
 </template>
 
@@ -86,33 +84,19 @@
 				phoneCheck:false,
 				WXCheck:false,
 				items:[
-					{
-						value:'阅读推荐',
-						label:0
-					},
-					{
-						value:'分享好文',
-						label:1
-					},
-					{
-						value:'深度解读',
-						label:2
-					},
-					{
-						value:'观点浅析',
-						label:3
-					}
-					
+					'阅读推荐',
+					'分享好文',
+					'深度解读',
+					'观点浅析',
 				],
+				index:1,
 			};
 		},
 		methods:{
-			  openPopup(){
-			            this.$refs.popup.open()
-			        },
-			        closePopup(){
-			            this.$refs.popup.close()
-			        },
+			  bindPickerChange: function(e) {
+			          
+			            this.index = e.target.value
+			     },
 			phone(e){
 				console.log(e.detail.value)
 				this.showPhone = e.detail.value;

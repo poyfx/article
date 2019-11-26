@@ -42,7 +42,7 @@
 		methods:{
 			back(){
 				uni.reLaunch({
-					url:'../../../index/index'
+					url:'../../index/index'
 				})
 			},
 		},

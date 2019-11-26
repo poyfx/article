@@ -3,7 +3,7 @@
 		<titles :titles="titles" :isIcons='false' :color="true"></titles>
 		<stitles :titles="stitles" :color="false"></stitles>
 		<view class="comment_content">
-			<textarea  placeholder="请输入评论" />
+			<textarea  placeholder="请输入评论" v-model="comment"/>
 		</view>
 		<view class="comment_info bgcf">
 			<view class="comment_list flex border-Bottom">
@@ -16,7 +16,7 @@
 			</view>
 		</view>
 		<view class="comment_btn">
-			<button type="primary">提交并启用</button>
+			<button type="primary" @tap="comments">提交并启用</button>
 		</view>
 	</view>
 </template>
@@ -28,8 +28,16 @@
 		data() {
 			return {
 				titles: '发布原创文章',
-				stitles: '发布评论'
+				stitles: '发布评论',
+				comment:'',
 			};
+		},
+		methods:{
+			comments(){
+				// uni.navigateTo({
+				// 	url:
+				// })
+			},
 		},
 		components: {
 			titles,

@@ -43,11 +43,12 @@
 		align-content: center;
 		.s_edit{
 			border: 1px solid #dddddd;
-			padding:4px 14px;
+			padding:4px 4px;
 			line-height: 17px;
 			font-size: 0.65rem;
 			color: $color55;
 			margin-bottom: 5px;
+			text-align: center;
 		}
 		.s_logo{
 			justify-content: center;

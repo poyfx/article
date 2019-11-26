@@ -68,7 +68,7 @@
 				<text>相关产品及服务</text>
 				<view class="product_detaile bgcf flex">
 					<view class="product_img">
-						<image src="../../static/logo.png" mode="aspectFit"></image>
+						<image src="../../static/img/product.png" mode="aspectFit"></image>
 					</view>
 					<view class="product_text">
 						<view>农银消费主题混合H</view>
@@ -81,7 +81,7 @@
 			</view>
 			
 			<view class="user_btn">
-				<button type="primary">确认</button>
+				<button type="primary" @tap="go">确认</button>
 			</view>
 			
 		</view>
@@ -96,6 +96,13 @@
 			return {
 				titles: "个人中心",
 			};
+		},
+		methods:{
+			go(){
+				uni.navigateBack({
+					delta:1
+				})
+			},
 		},
 		components: {
 			titles,

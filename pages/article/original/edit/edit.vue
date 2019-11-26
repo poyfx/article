@@ -14,9 +14,10 @@
 		</view>
 
 		<view class="edit_content bgcf flex">
-			<view class="edit_content_img flex">
-				<view>+</view>
-				<text>封面图</text>
+			<view class="edit_content_img flex" @tap="uploadTitle">
+				<view v-if="src == ''">+</view>
+				<text v-if="src == ''">封面图</text>
+				<image :src="src" mode="aspectFit" v-if="src !== ''"></image>
 			</view>
 
 			<view class="edit_content_info">
@@ -35,11 +36,11 @@
 			</view>
 			<view class="edit_article_right flex">
 				<view class="edit_article_img flex">
-					<image src="../../../../static/logo.png" mode="aspectFit"></image>
+					<image src="../../../../static/img/pic.png" mode="aspectFit"></image>
 					<text>插入图片</text>
 				</view>
 				<view class="edit_article_img flex">
-					<image src="../../../../static/logo.png" mode="aspectFit"></image>
+					<image src="../../../../static/img/mov.png" mode="aspectFit"></image>
 					<text>插入视频</text>
 				</view>
 			</view>
@@ -67,12 +68,22 @@
 			return {
 				titles: '发布原创文章',
 				html: '<div>hello world</div>',
-				richs: ''
+				richs: '',
+				src:'',
 			};
 		},
 		methods: {
 			rich() {
 
+			},
+			uploadTitle(){
+				uni.chooseImage({
+					count:1,
+					sourceType:['album '],
+					success: (choose) => {
+						this.src = choose.tempFilePaths[0]
+					}
+				})
 			},
 			go(){
 				uni.navigateTo({

@@ -12,7 +12,7 @@
 				</view>
 			</view>
 		</view>
-	
+
 		<view class="authorinfo_article bgcf">
 			<view class="authorinfo flex">
 				<view class="authorinfo_logo flex">
@@ -27,8 +27,8 @@
 						<text>分享好文</text>
 					</view>
 				</view>
-				<view class="authorinfo_add bgcf">
-					<view @tap="addinfo">+添加该模块</view>
+				<view class="authorinfo_add bgcf"  @tap="addinfo">
+					<view>+添加该模块</view>
 				</view>
 			</view>
 			<parser :html="html"></parser>
@@ -49,11 +49,13 @@
 			<image src="../../../../static/img/mall.png" mode="aspectFit"></image>
 		</view>
 		<view class="add_btn flex">
-			<text class="flex look">预览</text>
+			<text class="flex look">
+				<image src="../../../../static/img/preview.png" mode="aspectFit"></image>预览
+			</text>
 			<text class="flex save">保存并转发</text>
 		</view>
 		<suspension></suspension>
-		
+
 	</view>
 </template>
 
@@ -73,21 +75,22 @@
 			};
 		},
 		methods: {
-			go(){
-				  this.$refs.child.go();
+			go() {
+				this.$refs.child.go();
 			},
 			rich() {
 
 			},
 			// 添加该模块
-			addinfo(){
+			addinfo() {
+				
 				uni.navigateTo({
-					url:'../../userinfo/userinfo'
+					url: '../../userinfo/userinfo'
 				})
 			},
-			back(){
+			back() {
 				uni.navigateBack({
-					delta:1
+					delta: 1
 				})
 			},
 		},
@@ -105,60 +108,62 @@
 <style lang="scss">
 	.displaybit {
 		padding-bottom: 48px;
+
 		.authorinfo_article {
 			margin-bottom: 40px;
 			padding: 24px 30px 34px 28px;
+
 			.authorinfo {
 				margin: 0px 0px 24px;
-				 padding: 10px 17px 10px 12px;
+				padding: 10px 17px 10px 12px;
 				border-radius: 3px;
 				background-color: #f2f2f2;
 				justify-content: space-between;
 				align-content: center;
 				align-items: center;
-			
+
 				.authorinfo_logo {
 					justify-content: space-between;
 					align-content: center;
 					align-items: center;
-			
+
 					.authorinfo_img {
 						margin-right: 8px;
-			
+
 						image {
 							width: 40px;
 							height: 40px;
 							border-radius: 50%;
 						}
 					}
-			
+
 					.authorinfo_text {
 						flex-direction: column;
-			
+
 						view {
 							align-content: center;
 							align-items: center;
-			
+
 							view {
 								font-size: $size14;
 								color: $color55;
 								margin-right: 8px;
 							}
-			
+
 							text {
 								font-size: 0.65rem;
 								color: $color55;
 							}
-			
+
 						}
-			
+
 						>text {
 							font-size: 0.65rem;
 							color: $color88;
 						}
 					}
 				}
-			
+
 				.authorinfo_add {
 					padding: 5px 8px;
 					font-size: 0.65rem;
@@ -169,20 +174,24 @@
 
 		.personal_info {
 			margin: 24px 30px 34px 28px;
-			.personal{
+
+			.personal {
 				margin-bottom: 20px;
 			}
 		}
-		.mall{
+
+		.mall {
 			width: 100%;
 			height: 100px;
 			margin-bottom: 16px;
-			image{
+
+			image {
 				width: 100%;
-			height: 100%;
+				height: 100%;
 			}
 		}
-		.add_btn{
+
+		.add_btn {
 			position: fixed;
 			bottom: 0;
 			left: 0;
@@ -191,21 +200,29 @@
 			justify-content: space-between;
 			align-content: center;
 			align-items: center;
-			text{
+
+			text {
 				height: 100%;
 				align-content: center;
 				align-items: center;
 				text-align: center;
-					justify-content: center;
-					font-weight: 550;
+				justify-content: center;
+				font-weight: 550;
+				image{
+					width: 20px;
+					height: 13px;
+					margin-right: 5px;
+				}
 			}
-			.look{
+
+			.look {
 				width: 40%;
 				background-color: #FFFFFF;
 				color: $color55;
 				size: $size14;
 			}
-			.save{
+
+			.save {
 				width: 60%;
 				background-color: #3C84EF;
 				color: #FFFFFF;

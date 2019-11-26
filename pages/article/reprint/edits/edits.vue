@@ -7,8 +7,9 @@
 					<uni-icons type="arrowleft" size="28"></uni-icons>
 				</view>
 				<view>编辑文章</view>
-				<view class="right_save_collection flex">
-					<image src="../../../../static/home.png" mode="aspectFit"></image>
+				<view class="right_save_collection flex" @tap="likeIt">
+					<image src="../../../../static/img/nolike.png" mode="aspectFit" v-show="like"></image>
+					<image src="../../../../static/img/like.png" mode="aspectFit" v-show="!like"></image>
 					<text>收藏</text>
 				</view>
 			</view>
@@ -30,9 +31,11 @@
 			<view class="edits_img">
 				<image src="../../../../static/img/photo2.png" mode="aspectFit"></image>
 			</view>
+			<disclaimer name="小黑"></disclaimer>
 		</view>
 		<view class="edits_btn flex">
 			<view class="edits_edit flex" @click="edits">
+				<image src="../../../../static/img/edit.png" mode="aspectFit"></image>
 				编辑
 			</view>
 			<view class="edits_deract flex">
@@ -44,23 +47,32 @@
 
 <script>
 	import titles from '@/components/title.vue'
-	
+	import disclaimer from '@/components/disclaimer.vue'
 	export default {
 		data() {
 			return {
 				titles: '发布转载文章',
+				like:true,
 			};
 		},
 		methods:{
+			likeIt(){
+				this.like=!this.like;
+			},
 			edits(){
 				uni.navigateTo({
 					url:'../editingArticles/editingArticles'
 				})
 			},
+			back() {
+				uni.navigateBack({
+					delta: 1
+				})
+			},
 		},
 		components: {
 			titles,
-			
+			disclaimer
 		}
 	}
 </script>
@@ -69,7 +81,7 @@
 .edits{
 	padding-bottom: 49px;
 	.edits_content{
-		padding: 17px 28px 0 32px;
+		padding: 17px 28px 20px 32px;
 		.edits_title{
 			line-height: 24px;
 			margin-bottom: 10px;
@@ -114,7 +126,11 @@
 			align-content: center;
 			align-items: center;
 			justify-content: center;
-		
+			image{
+				width: 16px;
+				height: 16px;
+				margin-right: 5px;
+			}
 			
 		}
 		.edits_deract{

@@ -10,7 +10,7 @@
 						<text>公司及职位</text>
 				</view>
 			</view>
-			<view class="personal_add bgcf">
+			<view class="personal_add bgcf" @tap="adds">
 				<view>+添加该模块</view>
 			</view>
 		</view>
@@ -26,7 +26,15 @@
 			return {
 				
 			};
+		},
+		methods:{
+			adds(){
+			uni.navigateTo({
+				url:'../../../user/user'
+			})
+		},
 		}
+		
 	}
 </script>
 

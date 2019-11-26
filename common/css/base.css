@@ -91,24 +91,41 @@ text {
 		height: 30px;
 		margin-left: 5px;
 		position: absolute;
-		right: 6px;
+		right: 14px;
 		color: #3C84EF;
 		font-size: 0.7rem;
 		font-weight: normal;
 		align-content: center;
 		align-items: center;
 	}
-	.right_save_collection{
-		width: 45px;
+	.right_savebt_next{
+		width:3.5rem;
 		height: 30px;
 		margin-left: 5px;
 		position: absolute;
-		right: 6px;
+		right: 14px;
+		font-size: 0.65rem;
+		font-weight: normal;
+		align-content: center;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.right_savebt_next text{
+		color: #3C84EF;
+	}
+	.right_save_collection{
+		width: 4rem;
+		height: 30px;
+		margin-left: 5px;
+		position: absolute;
+		right: 14px;
 		color: #555555;
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 		font-weight: 550;
 		align-content: center;
 		align-items: center;
+		justify-content: flex-end;
+		white-space: nowrap;
 	}
 	.right_save_collection image{
 		width: 11px;

@@ -4,7 +4,7 @@
 
 		<view class="login_content ">
 			<view class="login-img">
-				<image src="../../static/logo.png" mode=""></image>
+				<image src="../../static/img/LOGO.png" mode="aspectFit"></image>
 			</view>
 			<view class="login-btn">
 				<button type="primary" @tap="go">登录</button>
@@ -26,7 +26,7 @@
 		},
 		methods: {
 go(){
-	uni.switchTab({
+	uni.navigateTo({
 		url:'../index/index'
 	})
 },
@@ -50,8 +50,8 @@ go(){
 				text-align: center;
 				margin-bottom: 55px;
 				image{
-					width: 80px ;
-					height: 80px;
+					width: 77px ;
+					height: 97px;
 				}
 			}
 			.login-btn{

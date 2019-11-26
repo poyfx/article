@@ -7,7 +7,8 @@
 					<uni-icons type="arrowleft" size="28"></uni-icons>
 				</view>
 				<view>编辑文章</view>
-				<view class="right_savebtn flex">
+				<view class="right_savebt_next  flex">
+					<view>重置</view>
 					<text>保存</text>
 				</view>
 			</view>
@@ -44,18 +45,18 @@
 						+添加注释
 					</view>
 					<view class="close" @tap="deletes=false">
-						x
+						×
 					</view>
 					<view class="edits_img ">
 						<image src="../../../../static/img/photo1.png" mode="aspectFit"></image>
 					</view>
 				</view>
-				<view :class="deletes1?sets:''">
+				<view :class="deletes1?sets:''" v-show="Xclose">
 					<view class="notes" @tap="area=true" v-show='deletes1'>
 						+添加注释
 					</view>
-					<view class="close" @tap="deletes1=false" v-show='deletes1'>
-						x
+					<view class="close" @tap="Xclose = false" v-show='deletes1'>
+						×
 					</view>
 					<view class="edits_text">
 
@@ -63,7 +64,7 @@
 					</view>
 
 					<!-- 注释 -->
-					<view class="set_notes" v-show="!deletes1">
+					<view class="set_notes" v-show="showNotes">
 						<view></view>
 						<text>{{text}}</text>
 					</view>
@@ -73,10 +74,9 @@
 						+添加注释
 					</view>
 					<view class="close" @tap="deletes2=false">
-						x
+						×
 					</view>
 					<view class="edits_text">
-
 						<text>8月25日下午5点18分，央行通过官网发布公告，宣布从10月8日开始全面调整房贷利率计算方式！月25日下午5点18分，央行通过官网发布公告，宣布从10月8日开始全面调整房贷利率计算方式！月25日下午5点18分，央行通过官网发布公告，宣布从10月8日开始全面调整房贷利率计算方式！</text>
 					</view>
 				</view>
@@ -87,7 +87,7 @@
 						+添加注释
 					</view>
 					<view class="close" @tap="deletes3=false">
-						x
+						×
 					</view>
 					<view class="edits_img">
 
@@ -115,7 +115,8 @@
 			<image src="../../../../static/img/mall.png" mode="aspectFit"></image>
 		</view>
 		<view class="add_btn flex">
-			<text class="flex look">预览</text>
+			<text class="flex look">
+				<image src="../../../../static/img/preview.png" mode="aspectFit"></image>预览</text>
 			<text class="flex save">保存并转发</text>
 		</view>
 		<!-- 悬浮 -->
@@ -124,12 +125,12 @@
 			<view class="notes_text">
 				<view class="title">
 					<text>添加注释</text>
-					<view class="close_text">
-						X
+					<view class="close_text" @tap="area=false">
+						×
 					</view>
 				</view>
 				<view class="textarea">
-					<textarea v-model="text" placeholder="输入你的评论内容" />
+					<textarea v-model="text" placeholder="输入你的评论内容" adjust-position="true" />
 					</view>
 				
 				<view class="text_btn">
@@ -158,8 +159,10 @@
 				deletes2: true,
 				deletes3: true,
 				text:'',
-				area:false,
+				area:false,//显示注释框
 				sets:'set',
+				showNotes:false,//显示注释内容
+				Xclose:true,
 			};
 		},
 		methods: {
@@ -171,10 +174,12 @@
 			},
 			set(){
 				if(this.text == ''){
-					return this.area = false;
-				}else{
 					this.area = false;
-				this.deletes1 = false;
+					this.showNotes=false;
+				}else{
+					this.showNotes=true;
+					this.area = false;
+					this.deletes1 = false;
 				}
 			},
 			comment(){
@@ -214,7 +219,7 @@
 
 		.notes {
 			position: absolute;
-			top: -20px;
+			top: -23px;
 			left: -1px;
 			background-color: #626262;
 			color: #FFFFFF;
@@ -226,7 +231,7 @@
 
 		.close {
 			position: absolute;
-			top: -20px;
+			top: -23px;
 			right: -1px;
 			background-color: #626262;
 			color: #FFFFFF;
@@ -466,6 +471,11 @@
 				background-color: #FFFFFF;
 				color: $color55;
 				size: $size14;
+				image{
+					width: 20px;
+					height: 13px;
+					margin-right: 5px;
+				}
 			}
 
 			.save {
