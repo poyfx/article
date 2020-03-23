@@ -1,0 +1,1 @@
+<view class="header"><view class="{{[' flex border-Bottom',color?header_title:header_title_white]}}"><view data-event-opts="{{[['tap',[['back',['$event']]]]]}}" class="left" bindtap="__e"><uni-icons vue-id="1" type="arrowleft" size="28" bind:__l="__l"></uni-icons></view><view>{{titles}}</view></view></view>

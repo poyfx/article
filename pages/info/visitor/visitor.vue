@@ -1,7 +1,7 @@
 <template>
 	<view class="visitor bgcf">
-		<titles :titles="titles" :isIcons='false' :color="true"></titles>
-		<titles2 :titles="titles2" :color="false"></titles2>
+		<!-- <titles :titles="titles" :isIcons='false' :color="true"></titles>
+		<titles2 :titles="titles2" :color="false"></titles2> -->
 		<view class="visitor_content">
 			<view class="visitor_number flex border-Bottom">
 				<text>共18个好友访问</text>

@@ -16,7 +16,7 @@
 		props: {
 			name: {
 				type: String,
-				value: '文章助手'
+				default: '文章助手'
 			}
 		},
 		data() {

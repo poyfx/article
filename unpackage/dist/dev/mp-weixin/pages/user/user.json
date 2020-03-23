@@ -1,0 +1,9 @@
+{
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 100,
+  "usingComponents": {
+    "titles": "/components/title"
+  }
+}

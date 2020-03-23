@@ -4,207 +4,379 @@
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
+				"navigationBarTitleText": "登录",
+				// "enablePullDownRefresh": true, //开启下拉刷新
+				 "navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
 			}
 		},
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
+				"navigationBarTitleText": "首页",
+				//"enablePullDownRefresh": true, //开启下拉刷新
+				 "navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
 			}
-		},  {
+		}, {
 			"path": "pages/info/info",
 			"style": {
 				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
+				"navigationBarTitleText": "我的文章",
+				//"enablePullDownRefresh": true, //开启下拉刷新
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/info/visitor",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "我的文章",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/reprint/reprint",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "我的文章",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/original/original",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "文章小助手",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/reprint/tips/tips",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "文章小助手",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "个人中心",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/user/modifyUser/modifyUser",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "修改资料",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/original/edit/edit",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "发布原创文章",
+				
+				 "navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/original/addDisplayBit/addDisplayBit",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "添加额外展示位",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/userinfo/userinfo",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "形象展示位",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/productInfo/productInfo",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "添加产品/案例/服务",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/productInfo/productArticle",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "内容正文",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/consultation/consultation",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "快速咨询",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/reprint/edits/edits",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "发布转载文章",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/reprint/editingArticles/editingArticles",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "添加展示位",
+				//"enablePullDownRefresh": true, //开启下拉刷新
+				 "navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/comment/comment",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "发表评论",
+			//	"enablePullDownRefresh": true, //开启下拉刷新
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/start/start",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "登录",
+				//"enablePullDownRefresh": true, //开启下拉刷新
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/info/collection",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "我的收藏",
+				
+				 "navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/info/articleStatistics",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "访客追踪",
+			//	"enablePullDownRefresh": true, //开启下拉刷新
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/info/visitorDetile",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "访客详细",
+				
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/info/drafts",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "我的文章",
+				//"enablePullDownRefresh": true, //开启下拉刷新
+				 "navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
+			}
+		}, {
+			"path": "pages/article/preview/preview",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "预览",
+				
+
+				 "navigationStyle": "custom"
+				// "enablePullDownRefresh": false,
+				// "onReachBottomDistance": 100,
+				// "app-plus": {
+				// 	"bounce": "none",
+				// 	"titleNView": false
+				// }
 			}
 		}
 	    ,{
-            "path" : "pages/info/visitor/visitor",
+            "path" : "pages/article/share/share",
             "style" : {
 				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
+				"navigationBarTitleText": "文章",
+				
+				
+				 "navigationStyle": "custom"
 			}
         }
         ,{
-            "path" : "pages/article/reprint/reprint",
+            "path" : "pages/article/share/shareArticleInfo",
             "style" : {
 				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
+				"navigationBarTitleText": "个人中心",
+				
+				
+				 "navigationStyle": "custom"
 			}
         }
         ,{
-            "path" : "pages/article/original/original",
+            "path" : "pages/article/share/shareProduct",
             "style" : {
 				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
+				"navigationBarTitleText": "产品详情",
+				
+				
+				 "navigationStyle": "custom"
 			}
         }
         ,{
-            "path" : "pages/article/reprint/tips/tips",
+            "path" : "pages/article/share/out",
             "style" : {
 				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/user/user",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/original/edit/edit",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/original/addDisplayBit/addDisplayBit",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/userinfo/userinfo",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/productInfo/productInfo",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/consultation/consultation",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/reprint/edits/edits",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/reprint/editingArticles/editingArticles",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
-			}
-        }
-        ,{
-            "path" : "pages/article/comment/comment",
-            "style" : {
-				"navigationBarTextStyle": "black",
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"onReachBottomDistance": 100,
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": false
-				}
+				"navigationBarTitleText": "外部链接",
+				
+				
+				 "navigationStyle": "custom"
 			}
         }
     ],

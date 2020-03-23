@@ -1,0 +1,1 @@
+<view class="login bgcf"><titles vue-id="1" titles="{{titles}}" color="{{true}}" bind:__l="__l"></titles><view class="login_content "><view class="login-img"><image src="../../static/img/LOGO.png" mode="aspectFit"></image></view><view class="login-btn"><button type="primary" data-event-opts="{{[['tap',[['go',['$event']]]]]}}" bindtap="__e">登录</button></view></view></view>

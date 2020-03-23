@@ -1,0 +1,1 @@
+<view class="suspension flex"><view data-event-opts="{{[['tap',[['go',['$event']]]]]}}" class="s_edit" bindtap="__e"><text>编辑</text></view><view class="s_logo flex"><image src="{{src}}" mode="aspectFit"></image></view><view class="s_ask"><text>问一问</text></view></view>

@@ -1,8 +1,8 @@
 <template>
 	<view class="tips">
-		<titles :titles="titles" :isIcons='false' :color="true"></titles>
+	<!-- 	<titles :titles="titles" :isIcons='false' :color="true"></titles>
 		<titles2 :titles="titles2" :color="false"></titles2>
-
+ -->
 		<view class="tips_content bgcf">
 			<view class="tips_step">
 				<text>1、打开将要转发的<text>微信公众号文章</text>，点击屏幕右上角“三个点”功能按钮</text>

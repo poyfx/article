@@ -74,11 +74,13 @@
     "h5" : {
         "router" : {
             "mode" : "hash",
-            "base" : ""
+            "base" : "/h5/"
         },
         "title" : "文章助手",
         "devServer" : {
             "https" : false
-        }
+        },
+        "domain" : "",
+		"template":"template.h5.html"
     }
 }

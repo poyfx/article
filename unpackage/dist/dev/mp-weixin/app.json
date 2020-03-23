@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/info/info",
+    "pages/info/visitor/visitor",
+    "pages/article/reprint/reprint",
+    "pages/article/original/original",
+    "pages/article/reprint/tips/tips",
+    "pages/user/user",
+    "pages/article/original/edit/edit",
+    "pages/article/original/addDisplayBit/addDisplayBit",
+    "pages/article/userinfo/userinfo",
+    "pages/article/productInfo/productInfo",
+    "pages/article/consultation/consultation",
+    "pages/article/reprint/edits/edits",
+    "pages/article/reprint/editingArticles/editingArticles",
+    "pages/article/comment/comment",
+    "pages/start/start"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {
+    "titles": "/components/title",
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

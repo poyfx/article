@@ -1,0 +1,17 @@
+{
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 100,
+  "bounce": "none",
+  "titleNView": false,
+  "usingComponents": {
+    "titles": "/components/title",
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "parser": "/components/jyf-Parser/index",
+    "disclaimer": "/components/disclaimer",
+    "personal": "/components/personal",
+    "product": "/components/product",
+    "suspension": "/components/suspension"
+  }
+}

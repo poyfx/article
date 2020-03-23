@@ -1,6 +1,6 @@
 <template>
 	<view class="reprint">
-		<titles :titles="titles" :isIcons='false'></titles>
+		<!-- <titles :titles="titles" :isIcons='false'></titles> -->
 		<view class="reprint_content">
 			<view class="reprint_img">
 				<image src="../../../static/img/Original0-banner.jpg" mode="aspectFill"></image>
@@ -70,6 +70,9 @@
 		},
 		methods: {
 			go(){
+				uni.removeStorage({
+					key:'drafts'
+				})
 				uni.navigateTo({
 					url:'./edit/edit'
 				})

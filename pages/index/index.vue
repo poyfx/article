@@ -48,7 +48,9 @@
 		methods: {
 		go(){
 			uni.navigateTo({
-				url:'../article/original/original'
+				 url:'../user/user'
+				
+				
 			})
 		},
 		edit(){
